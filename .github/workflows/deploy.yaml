@@ -30,6 +30,11 @@ jobs:
           submodules: recursive
           ssh-key: ${{ secrets.SSH_KEY }}
 
+      - name: Copy kelkkareitit pmtiles
+        run: cp kelkkareitit-v5/data/kelkkareitit.pmtiles.gz kelkkareitit-v5/frontend/kelkkareitit.pmtiles.gz
+      - name: List files
+        run: ls -laR kelkkareitit-v5/frontend
+
       - name: Setup Pages
         uses: actions/configure-pages@v5
       - name: Upload artifact
