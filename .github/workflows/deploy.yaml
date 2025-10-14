@@ -32,8 +32,6 @@ jobs:
 
       - name: Copy kelkkareitit pmtiles
         run: cp kelkkareitit-v5/data/kelkkareitit.pmtiles.gz kelkkareitit-v5/frontend/kelkkareitit.pmtiles.gz
-      - name: Copy route-snapper files
-        run: cp kelkkareitit-v5/data/finland-snowmobile.bin kelkkareitit-v5/frontend/finland-snowmobile.bin
       - name: List files
         run: ls -laR kelkkareitit-v5/frontend
 
